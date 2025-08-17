@@ -9,7 +9,7 @@ Icons
 .column-icon {
   display: flex;
   align-items: center;
-  width: 2.75rem;
+  width: 1.75rem;
   cursor: pointer;
 }
 .column-icon .icon-svg {
