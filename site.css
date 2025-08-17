@@ -36,6 +36,37 @@ html, body {
   margin: 0.25rem 0 1.5rem 0.25rem;
 }
 
+.product-name,
+.product-price {
+  font-family: "Utclarke Variable";
+  color: var(--_colours---mid-grey);
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-variation-settings: "wght" 350, "slnt" 0;
+  font-feature-settings: "ss02", "onum";
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.25rem;
+  border-bottom: 1px solid var(--_colours---buy-stroke);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.product-row:hover {
+  background: #c2facd;
+}
+
+.product-name {
+  flex: 1;
+}
+.product-price {
+  margin: 0 3rem;
+  text-align: left;
+}
+
 /* ------------------------------------
 Icons
 ------------------------------------- */
