@@ -15,6 +15,10 @@ html, body {
   font-feature-settings: "ss02";
 }
 
+.cart-empty-message {
+  margin-top: 1.5rem;
+}
+
 .cart-license-heading {
   margin-top: 1.5rem;
   padding-left: 0.25rem;
