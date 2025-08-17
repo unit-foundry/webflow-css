@@ -3,6 +3,35 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+.cart-empty-message,
+.cart-license-heading,
+.family-note,
+.license-field-heading {
+  font-family: "Utclarke Variable";
+  color: var(--_colours---mid-grey);
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-variation-settings: "wght" 300, "slnt" 0;
+  font-feature-settings: "ss02";
+}
+
+.cart-license-heading {
+  margin-top: 1.5rem;
+  padding-left: 0.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--_colours---buy-stroke);
+}
+
+.license-field-heading {
+  margin-top: 1.5rem;
+  margin-left: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.family-note {
+  margin: 0.25rem 0 1.5rem 0.25rem;
+}
+
 /* ------------------------------------
 Icons
 ------------------------------------- */
