@@ -67,6 +67,198 @@ html, body {
   text-align: left;
 }
 
+.form-input {
+  font-family: "Utclarke Variable";
+  font-variation-settings: "wght" 300, "slnt" 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  color: var(--_colours---dark-grey);
+  background: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.form-input::placeholder {
+  color: var(--_colours---light-grey);
+}
+
+.custom-checkbox {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  background: #fff;
+  transition: all 0.2s ease;
+  margin-right: 0.25rem;
+}
+.custom-checkbox.checked {
+  background: #66f382;
+  border: 1px solid #66f382;
+}
+
+.license-guide-button {
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.license-guide-button:hover {
+  background: #55dd71;
+}
+
+#licensee-button,
+#checkout-button {
+  font-family: "Utclarke Variable";
+  color: var(--_colours---dark-grey);
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  font-variation-settings: "wght" 300, "slnt" 0;
+  font-feature-settings: "onum" 1;
+  text-align: center;
+  padding: 1rem;
+  background: #66f382;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+#licensee-button:hover,
+#checkout-button:hover {
+  background: #55dd71;
+}
+#licensee-button.empty,
+#checkout-button.empty {
+  background: #c2facd;
+  color: #dafce1;
+  pointer-events: none;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.remove-icon {
+  stroke: black;
+  width: 0.75rem;
+  height: 0.75rem;
+  transition: stroke 0.2s;
+}
+.remove-item:hover .remove-icon {
+  stroke: #F2667A;
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+}
+.empty-cart img {
+  max-width: 25%;
+  height: auto;
+  display: inline-block;
+}
+
+/* ------------------------------------
+Dropdowns
+------------------------------------- */
+
+.license-dropdown-container,
+.license-dropdown-container-mobile {
+  position: relative;
+  display: inline-block;
+  font-family: "Utclarke Variable";
+  font-variation-settings: "wght" 300, "slnt" 0;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: black;
+  width: 100%;
+}
+.license-dropdown-container-mobile {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-variation-settings: "wght" 400, "slnt" 0;
+}
+
+.license-dropdown-selected,
+.license-dropdown-selected-mobile {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.license-dropdown-selected::before {
+  content: "▼";
+  color: #66f382;
+  margin-right: 0.25rem;
+}
+.license-dropdown-selected-mobile {
+  text-align: center;
+  border-color: #fff;
+  background: black;
+  color: #fff;
+}
+
+.license-dropdown-options,
+.license-dropdown-options-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  border-radius: 2px;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+.license-dropdown-options-mobile {
+  text-align: center;
+  border-color: #fff;
+  background: black;
+  color: #fff;
+}
+.license-dropdown-options div,
+.license-dropdown-options-mobile div {
+  padding: 5px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.license-dropdown-options div:hover {
+  background: #c2facd;
+}
+
+/* ------------------------------------
+Tabs
+------------------------------------- */
+
+.license-tab .license-light {
+  background: #fff;
+  transition: background-color 0.2s ease;
+}
+.license-tab.active .license-light {
+  background: #66f382;
+}
+
+/* ------------------------------------
+Misc
+------------------------------------- */
+
+.font-select {
+  pointer-events: none;
+}
+
 /* ------------------------------------
 Icons
 ------------------------------------- */
