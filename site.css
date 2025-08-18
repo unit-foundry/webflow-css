@@ -3,6 +3,109 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ------------------------------------
+Nav
+------------------------------------- */
+
+.site-name {
+  cursor: pointer;
+  background: var(--_colours---light-grey);
+  transition: background 0.1s ease;
+}
+
+.site-name.active {
+  background: var(--_colours---mid-grey);
+}
+
+.site-name.active .ut {
+  color: var(--_colours---off-white);
+}
+
+.floating-button {
+cursor: pointer;
+background: var(--_colours---light-grey);
+transition: background 0.1s ease;
+}
+
+.floating-button.blank {
+background: transparent;
+}
+
+.floating-button.blank:hover {
+background: transparent;
+}
+
+.floating-button.blank:hover .floating-button-text  {
+color: var(--_colours---dark-grey);
+}
+
+.floating-button .floating-button-text {
+color: var(--_colours---dark-grey);
+transition: color 0.1s ease;
+}
+
+.floating-button:hover {
+background: var(--_colours---mid-grey);
+}
+
+.floating-button:hover .floating-button-text {
+color: var(--_colours---off-white);
+}
+
+.floating-button.active {
+background: var(--_colours---mid-grey);
+}
+
+.floating-button.active .floating-button-text {
+color: var(--_colours---off-white);
+}
+
+.buy-button-float:hover {
+  background: #55dd71;
+}
+
+.close-icon {
+  stroke: var(--_colours---dark-grey);
+  width: 1rem;
+  height: 1rem;
+  transition: stroke 0.2s;
+}
+
+.floating-button.close:hover .close-icon {
+  stroke: var(--_colours---off-white);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-name:hover {
+    background: var(--_colours---mid-grey);
+  }
+
+  .site-name:hover .ut {
+    color: var(--_colours---off-white);
+  }
+
+  .floating-button.blank:hover {
+    background: transparent;
+  }
+
+  .floating-button.blank:hover .floating-button-text {
+    color: var(--_colours---dark-grey);
+  }
+
+  .floating-button:hover {
+    background: var(--_colours---mid-grey);
+  }
+
+  .floating-button:hover .floating-button-text {
+    color: var(--_colours---off-white);
+  }
+}
+
+
+/* ------------------------------------
+Cart
+------------------------------------- */
+
 .cart-empty-message,
 .cart-license-heading,
 .family-note,
